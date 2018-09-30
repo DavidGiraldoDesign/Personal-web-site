@@ -1,9 +1,48 @@
 * {
   box-sizing: border-box;
-  font-family: 'Didact', sans-serif;
   
 }
 
+
+
+body::-webkit-scrollbar {
+  display: hide;
+}
+
+/*-----------------------------------------------*/
+h1{
+  font-family: 'Barlow', sans-serif;
+  font-size: 52pt;
+  color: rgb(20, 20, 20);
+}
+#int{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20pt;
+  color: rgb(55, 55, 55);
+}
+h2{
+  font-family: 'Barlow', sans-serif;
+  font-weight: lighter;
+  color: rgb(55, 55, 55);
+}
+
+h3{
+  font-family: 'Barlow', sans-serif;
+  font-size: 18pt;
+  color: rgb(55, 55, 55);
+}
+h4{
+  font-family: 'Barlow', sans-serif;
+  font-weight: bolder;
+  font-size: 16pt;
+  color: rgb(55, 55, 55);
+}
+p{
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 14pt;
+  color: rgb(55, 55, 55);
+}
+/*-----------------------------------------------*/
 .row::after {
   content: "";
   clear: both;
@@ -15,14 +54,20 @@
   padding: 15px;
   border: 1px solid red;
 }
+#root{
+  margin: 5%;
+  
+}
 
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
 
 }
+
 @media only screen and (min-width: 600px) {
   /* For tablets: */
+  
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -38,7 +83,28 @@
 }
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  #root{
+    margin: 10%;
+  }
+  h2{
+    font-family: 'Barlow', sans-serif;
+    font-weight: lighter;
+    font-size: 12pt;
+  }
+  
+  h3{
+    font-family: 'Barlow', sans-serif;
+    font-size: 24pt;
+  }
+  h4{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    font-size: 18pt;
+  }
 
+  p{
+    font-size: 12pt;
+  }
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
