@@ -1,6 +1,6 @@
 (function controler (){
 
-    view.render(svg.getAboutMe());
+    view.render();
     
     console.log("Hi");
 
