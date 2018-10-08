@@ -8,16 +8,18 @@ let view = {
         div.className='row col-12 col-m-12 col-s-12';
         div.innerHTML=` 
                         <!--div id="logo">Logo</div-->
-                        <div  id="myPortfolio"><h1><span>{Interactive} </span> Product Designer</h1></div>
-                        <div  id="menuButtonsContainer"></div>
+                        <div class="col-4 col-m-6 col-s-12"     id="myPortfolioHeader"><h1><span>{Interactive} </span> Product Designer</h1></div>
+                        <div  class="col-4 col-m-5 col-s-12"  id="menuButtonsContainer">
+                            
+                        </div>
 
                         `;
-        
+   
         div.querySelector('#menuButtonsContainer').appendChild(svg.getAboutMe());
-        div.querySelector('#menuButtonsContainer').appendChild(svg.getAboutMe());
-        div.querySelector('#menuButtonsContainer').appendChild(svg.getAboutMe());
-        div.querySelector('#menuButtonsContainer').appendChild(svg.getAboutMe());
-        div.querySelector('#menuButtonsContainer').appendChild(svg.getAboutMe());
+        div.querySelector('#menuButtonsContainer').appendChild(svg.getPortfolio());
+        div.querySelector('#menuButtonsContainer').appendChild(svg.getWorkExp());
+        div.querySelector('#menuButtonsContainer').appendChild(svg.getAwards());
+        div.querySelector('#menuButtonsContainer').appendChild(svg.getContact());
         
 
         return div;

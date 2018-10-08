@@ -2,11 +2,24 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by any browser but < IE9 */
+  /*  */
 }
 
-body::-webkit-scrollbar {
+/*body::-webkit-scrollbar {
   display: none;
-}
+}*/
 
 /*-----------------------------------------------*/
 h1{
@@ -22,7 +35,7 @@ h1{
 h2{
   font-family: 'Barlow', sans-serif;
   font-weight: lighter;
-  color: rgb(55, 55, 55);
+ 
 }
 
 h3{
@@ -73,7 +86,8 @@ p{
 }
 
 @media only screen and (min-width: 300px) {
-
+ 
+  
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -95,6 +109,7 @@ p{
   
   #root{
     margin: 5%;
+    
   }
 
   .col-m-1 {width: 8.33%;}

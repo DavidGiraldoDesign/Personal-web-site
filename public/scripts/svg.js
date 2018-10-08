@@ -1,50 +1,69 @@
 let svg = {
 
     getAboutMe: function () {
-        let div = document.createElement('button');
+        let div = document.createElement('div');
         div.id = 'about';
-        div.className = "menuButtonElement"
+        div.className = "menuSectionButton"
+
         div.innerHTML = `
-                
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 350 350">
-                    <g>
-                    <path d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587
-                        C104.535,132.855,136.084,171.173,175,171.173z"/>
-                    <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"/>
-                    <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"/>
-                    <path d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761
-                        s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131
-                        c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496
-                        c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z"/>
-                    </g>
-                </svg>
-            
+                <div class="menuButtonElement">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 27.23"><title>a_1</title><g id="321d018e-0e37-4d90-a040-c4a39a891963" data-name="Capa 2"><g id="6919d9a3-371e-4cb2-9c51-111ea1a8c32e" data-name="Layer 1"><path d="M15,27.23l-.58-.42C13.83,26.39,0,16.42,0,8.5A8.49,8.49,0,0,1,15,3,8.49,8.49,0,0,1,30,8.5c0,7.92-13.83,17.89-14.42,18.31ZM8.5,2A6.51,6.51,0,0,0,2,8.5C2,14,10.89,21.7,15,24.76,19.11,21.7,28,14,28,8.5A6.5,6.5,0,0,0,15.87,5.27L15,6.77l-.87-1.51A6.52,6.52,0,0,0,8.5,2Z"/></g></g></svg>
+                </div>
+                <h2 class = "menuSectionTitle">About me</h2>
              `
         return div;
+
     },
     getPortfolio: function () {
         let div = document.createElement('div');
         div.id = 'port';
-        div.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:red;}.cls-2{fill:#fff;}</style></defs><title>Recurso 2</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><circle class="cls-1" cx="50" cy="50" r="49.5"/><path class="cls-2" d="M50,1A49,49,0,1,1,1,50,49.05,49.05,0,0,1,50,1m0-1a50,50,0,1,0,50,50A50,50,0,0,0,50,0Z"/></g></g></svg>`
+        div.className = "menuSectionButton"
+
+        div.innerHTML = `
+                                <div class="menuButtonElement">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.3 27.29"><title>Recurso 4</title><g id="ce0d3807-bcbf-4954-abb3-bb80c4138fa4" data-name="Capa 2"><g id="7cb9a06a-b6e8-49f1-b261-df51f694aedf" data-name="Layer 1"><rect x="4.14" y="13.65" width="17" height="2" transform="translate(-6.66 13.23) rotate(-45)"/><path d="M26.92,5.6,21.69.37a1.33,1.33,0,0,0-1.84,0L17.44,2.77a1.25,1.25,0,0,0-.17.26A1.18,1.18,0,0,0,17,3.2L1.18,19a2,2,0,0,0-.53,1.11L0,25.91a1.25,1.25,0,0,0,.31,1,1.24,1.24,0,0,0,.92.41l5.91-.65a2,2,0,0,0,1.1-.53L24.09,10.27a1.24,1.24,0,0,0,.17-.25,1.28,1.28,0,0,0,.26-.17l2.4-2.4a1.3,1.3,0,0,0,0-1.84ZM2.42,22.11l2.73,2.73-3.06.34Zm4.5,2.54H6.87l.46-.46L3.09,20,17.94,5.11l4.24,4.24ZM23.6,7.93,19.35,3.69l1.41-1.41L25,6.52Z"/></g></g></svg>
+                                </div>
+                                <h2 class = "menuSectionTitle">Porftfolio</h2>
+                             `
         return div;
     },
     getWorkExp: function () {
         let div = document.createElement('div');
         div.id = 'exp';
-        div.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.96 106.48"><defs><style>.cls-1{fill:red;}.cls-2{fill:#fff;}</style></defs><title>Recurso 3</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polygon class="cls-1" points="55.98 87.73 22.05 105.57 28.53 67.78 1.07 41.02 39.01 35.51 55.98 1.13 72.95 35.51 110.89 41.02 83.43 67.78 89.91 105.57 55.98 87.73"/><path class="cls-2" d="M56,2.26l16.4,33.23.23.47.52.08,36.68,5.33L83.27,67.24l-.38.37.09.51,6.27,36.53L56.44,87.41,56,87.16l-.47.25-32.8,17.24L29,68.12l.08-.51-.37-.37L2.15,41.37,38.82,36l.53-.08.23-.47L56,2.26M56,0,38.68,35.05,0,40.67,28,68l-6.61,38.53L56,88.29l34.6,18.19L84,68l28-27.28L73.28,35.05,56,0Z"/></g></g></svg>}`
+        div.className = "menuSectionButton"
+
+        div.innerHTML = `
+                        <div class="menuButtonElement">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 29"><title>b</title><g id="9c930833-c3a9-461d-afc2-f64d7361b6c6" data-name="Capa 2"><g id="f3853111-55b6-49ea-9561-c12ec56982f4" data-name="Layer 1"><path d="M28,24H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H28a2,2,0,0,1,2,2V22A2,2,0,0,1,28,24Zm0-2v0ZM2,2V22H28V2Z"/><rect x="1" y="16" width="28" height="2"/><path d="M21,29H9l2.18-7h7.7Zm-9.33-2h6.62l-.93-3H12.63Z"/><rect x="7" y="27" width="16" height="2"/><rect x="13" y="19" width="4" height="2"/></g></g></svg>
+                        </div>
+                        <h2 class = "menuSectionTitle">Work exp</h2>
+                     `
         return div;
     },
     getAwards: function () {
         let div = document.createElement('div');
         div.id = 'awar';
-        div.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.81 98.56"><defs><style>.cls-1{fill:red;}.cls-2{fill:#fff;}</style></defs><title>Recurso 4</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polygon class="cls-1" points="28.74 98.06 0.58 49.28 28.74 0.5 85.07 0.5 113.23 49.28 85.07 98.06 28.74 98.06"/><path class="cls-2" d="M84.78,1l27.87,48.28L84.78,97.56H29L1.15,49.28,29,1H84.78m.58-1H28.45L0,49.28,28.45,98.56H85.36l28.45-49.28L85.36,0Z"/></g></g></svg>`
+        div.className = "menuSectionButton"
+
+        div.innerHTML = `
+                        <div class="menuButtonElement">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.52 30.56"><title>Recurso 5</title><g id="1bf36cc4-ecd5-4290-a9ee-c59946621802" data-name="Capa 2"><g id="4e25de9d-074b-453b-b2ae-614b3e87b3cf" data-name="Layer 1"><path d="M25.49,30.56a1.39,1.39,0,0,1-.62-.15l-9.11-4.55L6.65,30.41a1.39,1.39,0,0,1-.62.15H6a1.18,1.18,0,0,1-.91-.42,1.29,1.29,0,0,1-.26-1.08l1.82-10L.41,12.8a1.24,1.24,0,0,1-.34-1.31,1.24,1.24,0,0,1,1.09-.8l9-.9L14.64.74a1.22,1.22,0,0,1,2.24,0l4.55,9.11,8.93.85a1.2,1.2,0,0,1,.75,2.11l-6.29,6.29,1.83,10a1.28,1.28,0,0,1-.26,1.07A1.18,1.18,0,0,1,25.49,30.56Zm-9.73-6.69a2,2,0,0,1,.89.2l7.76,3.88-1.55-8.54a2.06,2.06,0,0,1,.54-1.73l5.15-5.15-7.4-.74a2,2,0,0,1-1.52-1L15.76,3l-3.88,7.76a2,2,0,0,1-1.52,1L3,12.52l5.15,5.15a2.06,2.06,0,0,1,.54,1.73L7.1,27.95l7.76-3.88A2,2,0,0,1,15.76,23.87Z"/></g></g></svg>
+                        </div>
+                        <h2 class = "menuSectionTitle">Awards</h2>
+                     `
         return div;
     },
     getContact: function () {
         let div = document.createElement('div');
         div.id = 'cont';
-        div.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.47 100"><defs><style>.cls-1{fill:red;}.cls-2{fill:#fff;}</style></defs><title>Recurso 5</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polygon class="cls-1" points="0.87 99.5 57.73 1 114.6 99.5 0.87 99.5"/><path class="cls-2" d="M57.73,2l56,97H1.73l56-97m0-2L0,100H115.47L57.73,0Z"/></g></g></svg>`
+        div.className = "menuSectionButton"
+
+        div.innerHTML = `
+                        <div class="menuButtonElement">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 33"><title>Recurso 6</title><g id="03b4b4cc-b5b6-4c89-9a47-1e87e173ec32" data-name="Capa 2"><g id="f5206d6d-9465-44dd-9791-40b9918c949a" data-name="Layer 1"><path d="M18.12,9l2.73-5.46a1.06,1.06,0,0,0,0-1L20.46,2H4V0H2V31H0v2H6V31H4V16H19.9a1.06,1.06,0,0,0,.91-.5L21.1,15ZM4,14V4H18.38L16.15,8.46a1.22,1.22,0,0,0,0,1.07L18.38,14Z"/></g></g></svg>
+                        </div>
+                        <h2 class = "menuSectionTitle">Contact me</h2>
+                     `
         return div;
     }
 
