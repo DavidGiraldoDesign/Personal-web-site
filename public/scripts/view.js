@@ -21,13 +21,26 @@ let view = {
         div.querySelector('#menuButtonsContainer').appendChild(svg.getAwards());
         div.querySelector('#menuButtonsContainer').appendChild(svg.getContact());
         
+        return div;
+    },
+    getMobileHeader: function(){
+        let div = document.createElement('div');
+        div.id='mobileHeader';
+        div.className='row col-12 col-m-12 col-s-12';
+        div.innerHTML=` 
+                       <h1><span>{Interactive} </span> Product Designer</h1>
+
+                        `;
+        
 
         return div;
     },
 
 
     render: function(){
+        document.querySelector('body').appendChild(this.getMobileHeader());
         document.querySelector('body').appendChild(this.getMenuComponent());
+        
     }
 
 };

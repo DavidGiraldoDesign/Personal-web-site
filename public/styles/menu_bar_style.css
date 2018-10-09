@@ -1,3 +1,35 @@
+#mobileHeader{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top:0px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 60px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+    background: white;
+}
+
+#mobileHeader h1 {
+    height: auto;
+    position: relative;
+    
+    font-family: 'Barlow', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+    
+    
+}
+#mobileHeader span {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11pt;
+    font-weight: lighter;
+    color: rgb(55, 55, 55);
+}
+
 #menuComponent {
     position: fixed;
     margin: 0px;
@@ -15,6 +47,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    
     /* For tablets: */
     #menuButtonsContainer {
         /*background: blue;*/
@@ -24,6 +57,8 @@
 }
 
 @media only screen and (min-width: 1500px) {
+    
+    
     #menuButtonsContainer {
         /*background: red;*/
         margin-right: 16.66%;
@@ -46,6 +81,8 @@
 }
 
 @media only screen and (orientation: landscape) {
+    #mobileHeader{display: none;}
+    
     #menuComponent {
         top: 0px;
         height: 80px;
