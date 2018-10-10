@@ -72,11 +72,21 @@ p{
 #root{
   margin: 5%;
 }
+.awards{
+margin-bottom: 20px;
+}
 
 /* For mobile phones: */
 [class*="col-"] {
   /*width: 100%;*/
-  
+}
+
+
+@media only screen and (orientation: portrait) {
+  #root{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 @media only screen and (orientation: landscape) {
@@ -108,8 +118,9 @@ p{
   /* For tablets: */
   
   #root{
+
     margin: 5%;
-    
+
   }
 
   .col-m-1 {width: 8.33%;}

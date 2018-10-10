@@ -89,28 +89,32 @@ let cv = {
             var div = document.createElement("div");
             div.innerHTML = `
                     
-            <h1>University (undergraduate student) since 2012 - to date:</h1>
+            <h3>University (undergraduate student) since 2012 - to date:</h3>
+            <br>
             <p>
             Industrial Design - IX semester
             <br>
             Interactive Media Design - IX semester
             <p><br>
-            <h1>Academic: Honor student due to an outstanding performance in:</h1>
+            <h3>Academic: Honor student due to an outstanding performance in:</h3>
+            <br>
             <p>Industrial Design (January - 2016, August - 2015, January - 2014, August - 2014).<br>
             Interactive Media Design (January - 2017).</p>
             <br>
-            <h1>Certifications:</h1>
+            <h3>Certifications:</h3>
+            <br>
             <p>Design Kit: Prototyping, provided by +Acumen and IDEO.org (2018).
             <br>
             SolidWorks Associate - Mechanical Design (2014).
             </p>
             <br>
-            <h1>Non - academic: Appreciation & Contest:</h1>
+            <h3>Non - academic: Appreciation & Contest:</h3>
+            <br>
             
-                        <div class="awards col-12">
-                        <img class="col-4" src="assets/1.jpg" alt="b">
-                        <img class="col-4" src="assets/2.jpg" alt="b">
-                        <img class="col-4" src="assets/3.jpg" alt="b">
+                        <div class="awards">
+                        <img class="col-4 col-m-4 col-s-12" src="assets/1.jpg" alt="b">
+                        <img class="col-4 col-m-4 col-s-12" src="assets/2.jpg" alt="b">
+                        <img class="col-4 col-m-4 col-s-12" src="assets/3.jpg" alt="b">
                         </div>
             
                   

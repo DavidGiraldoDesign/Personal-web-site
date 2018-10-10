@@ -31,8 +31,6 @@ let view = {
                        <h1><span>{Interactive} </span> Product Designer</h1>
 
                         `;
-        
-
         return div;
     },
 
@@ -41,6 +39,10 @@ let view = {
         document.querySelector('body').appendChild(this.getMobileHeader());
         document.querySelector('body').appendChild(this.getMenuComponent());
         
+    },
+
+    renderContent: function(){
+        document.querySelector('#root').appendChild(cv.getEducation());
     }
 
 };
