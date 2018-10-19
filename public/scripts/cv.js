@@ -3,7 +3,7 @@ let cv = {
         getIntro: function getIntro() {
             var div = document.createElement("div");
             div.innerHTML = `
-    <div class="flex-container">
+     <div class="flex-container">
             <div class="container">
             <img src="assets/me.png" alt="Avatar" class="image">
             <div class="overlay">
@@ -89,26 +89,26 @@ let cv = {
             var div = document.createElement("div");
             div.innerHTML = `
                     
-            <h3>University (undergraduate student) since 2012 - to date:</h3>
+            <h4>University (undergraduate student) since 2012 - to date:</h4>
             <br>
             <p>
             Industrial Design - IX semester
             <br>
             Interactive Media Design - IX semester
             <p><br>
-            <h3>Academic: Honor student due to an outstanding performance in:</h3>
+            <h4>Academic: Honor student due to an outstanding performance in:</h4>
             <br>
             <p>Industrial Design (January - 2016, August - 2015, January - 2014, August - 2014).<br>
             Interactive Media Design (January - 2017).</p>
             <br>
-            <h3>Certifications:</h3>
+            <h4>Certifications:</h4>
             <br>
             <p>Design Kit: Prototyping, provided by +Acumen and IDEO.org (2018).
             <br>
             SolidWorks Associate - Mechanical Design (2014).
             </p>
             <br>
-            <h3>Non - academic: Appreciation & Contest:</h3>
+            <h4>Non - academic: Appreciation & Contest:</h4>
             <br>
             
                         <div class="awards">
@@ -135,7 +135,7 @@ let cv = {
         getWork: function getWork() {
             var div = document.createElement("div");
             div.innerHTML = `
-            <h1>Academic, Office and Research monitor in design at Icesi University:</h1>
+            <h4>Academic, Office and Research monitor in design at Icesi University:</h4>
             <p id="monitor">Under the supervision of recognized professors of the Icesi´s Design department. I have supported differents teachers by providing assistance to students requiring additional educational guidance in design. I also prepared extra topics, and assessed students’ projects in the following subjects: 
             </p>
             <p>
@@ -169,7 +169,7 @@ let cv = {
             var div = document.createElement("div");
             div.innerHTML = `
                
-            <h1> Language skills: </h1>
+            <h4> Language skills: </h4>
                 <p>
                 Spanish as a native language
                 <br>
@@ -177,16 +177,16 @@ let cv = {
                 English level B2 (Common european framework).
                 </p>
                 <br>
-            <h1> Associations / Students groups: </h1>
+            <h4> Associations / Students groups: </h4>
                 <p>
                 I am a co-founder and the Director of design and communication of the Icesi´s Industrial design student group: “Conceptos”. Creating the design guidelines for the community manager tasks, brand communication, and visual styling. From: August to November - 2017, January to May - 2018, August 2018 - to date. </p> 
                 <br>
-                <h2><a href="https://www.instagram.com/conceptosicesi/" target="_blank">Instagram</a></h2>
+                <h4><a href="https://www.instagram.com/conceptosicesi/" target="_blank">Instagram</a></h4>
+                
+                <h4><a href="https://www.facebook.com/conceptosicesi " target="_blank">Facebook</a></h4>
                 <br>
-                <h2><a href="https://www.facebook.com/conceptosicesi " target="_blank">Facebook</a></h2>
-                <br>
-                <br>
-            <h1>Graduation project for degree. Due date September 2019:</h1>
+                
+            <h4>Graduation project for degree. Due date September 2019:</h4>
                 <p>
                 Date: January 2018 - to date<br>
                 <br>

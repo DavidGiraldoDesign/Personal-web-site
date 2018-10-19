@@ -15,11 +15,20 @@ let view = {
 
                         `;
    
-        div.querySelector('#menuButtonsContainer').appendChild(svg.getAboutMe());
+        let about = div.querySelector('#menuButtonsContainer');
+        about.appendChild(svg.getAboutMe());
+      
         div.querySelector('#menuButtonsContainer').appendChild(svg.getPortfolio());
         div.querySelector('#menuButtonsContainer').appendChild(svg.getWorkExp());
         div.querySelector('#menuButtonsContainer').appendChild(svg.getAwards());
         div.querySelector('#menuButtonsContainer').appendChild(svg.getContact());
+
+        let menuSectionButtons = div.querySelectorAll('.menuSectionButton');
+        menuSectionButtons.forEach((element,index)=>{
+            element.addEventListener('click',f=>{
+                this.onChangeContent(index);
+            });
+        });
         
         return div;
     },
@@ -41,8 +50,9 @@ let view = {
         
     },
 
-    renderContent: function(){
-        document.querySelector('#root').appendChild(cv.getEducation());
+    renderContent: function(content){
+        document.querySelector('#root').innerHTML='';
+        document.querySelector('#root').appendChild(content);
     }
 
 };
